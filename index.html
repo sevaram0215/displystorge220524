@@ -4,89 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
-
-
     <div class="main_contanier">
-
-
-      
-    <div>
       <nav class="navbar">
-          <div class="title">Rajasthan Universcity</div>
-          <a href="#" class="span">
-              <span class="bar">@Instagram</span> <br>
-              <span class="bar">@Google</span><br>
-              <span class="bar">@Facebook</span><br>
-          </a>
-          <div class="navbar-links">
-              <ul>
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="#contact">Contact</a></li>
-              </ul>
-          </div>
+        <div class="title">Rajasthan Universcity</div>
+        <a href="#" class="span">
+          <span class="bar">@Instagram</span> <br />
+          <span class="bar">@Google</span><br />
+          <span class="bar">@Facebook</span><br />
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </nav>
-  </div>
-<div class="paremt_2">
-  <div id="image">
-      <img src="https://media.gettyimages.com/id/1390527993/photo/teenage-girl-using-smartphone-in-bed-late-at-night-with-sad-facial-expression.jpg?s=612x612&w=0&k=20&c=Cy3XK3PAQQ2rg8eSJvcffDQU7ckXkGio2z8r6xl4K4M=" alt="">
-  </div>
-  <div class="form">
-      <form id="form">
-          <div id="heading"></div>
-          <label>Name:-</label><br />
-          <input type="text" id="name" placeholder="enter your name" /> <br /><br />
-          <label for="">City:-</label><br />
-          <input name="" id="city" placeholder="enter city name" /><br /><br />
-          <label for="">Mobile:-</label><br />     
-          <input name="" id="mobile" placeholder="enter mobile" /><br /><br />
-          <label for="">Date of Birth:-</label><br />     
-          <input type="date" id="date"  placeholder="enter mobile" /><br /><br />
-          <label for="select">State:-</label><br>
-    
-          <select id="select">
-            <option value="">--Please choose an option--</option>
-            <option value="Rajasthan">Rajasthan</option>
-            <option value="Gujrat">Gujrat</option>
-            <option value="Himachal">Himachal </option>
-            <option value="Himachal">Himachal</option>
-            
-          </select>
-          <br><br>
-          <label for="">Details:-</label><br />
-          <input id="text" type="textarea" placeholder="text area" /><br /><br />
-          <button id="btn">Submit</button>
-        <h1>
-        Thank-You
-        </h1>
-        </form>
-       
-        
-  </div>
 
-</div>
- 
-<div id="display"></div>
+      <div class="paremt_2">
+        <div id="image">
+          <img
+            src="https://images.unsplash.com/photo-1546074177-ffdda98d214f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjU5fHxzdHVkeSUyMGdpcmx8ZW58MHx8MHx8fDA%3D"
+            alt=""
+          />
+        </div>
+        <div class="form">
+          <form id="form">
+            <div id="heading"></div>
+            <label>Name:-</label><br />
+            <input type="text" id="name" placeholder="enter your name" />
+            <br /><br />
+            <label for="">City:-</label><br />
+            <input
+              name=""
+              id="city"
+              placeholder="enter city name"
+            /><br /><br />
+            <label for="">Mobile:-</label><br />
+            <input name="" id="mobile" placeholder="enter mobile" /><br /><br />
+            <label for="">Date of Birth:-</label><br />
+            <input
+              type="date"
+              id="date"
+              placeholder="enter mobile"
+            /><br /><br />
+            <label for="select">State:-</label><br />
 
-  <footer class="footer">
-      <div class="footer-content">
+            <select id="select">
+              <option value="">--Please choose an option--</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Gujrat">Gujrat</option>
+              <option value="Himachal">Himachal</option>
+              <option value="Himachal">Himachal</option>
+            </select>
+            <br /><br />
+            <label for="">Details:-</label><br />
+            <input id="text" type="textarea"placeholder="text area" /><br /><br />
+            <button id="btn">Submit</button>
+            <h1>Thank-You</h1>
+          </form>
+        </div>
+      </div>
+
+      <div id="display"></div>
+
+      <footer class="footer">
+        <div class="footer-content">
           <p>&copy; 2024 Your Company Name. All rights reserved.</p>
           <ul class="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-      </div>
-  </footer>
- 
+        </div>
+      </footer>
     </div>
-
   </body>
   <script>
     let heading = document.getElementById("heading");
@@ -95,7 +93,6 @@
 
     heading.append(h1);
     let form = document.getElementById("form");
-    
 
     let arr = JSON.parse(localStorage.getItem("user")) || [];
 
@@ -113,52 +110,52 @@
         Details: document.getElementById("text").value,
       };
       arr.push(obj);
-      localStorage.setItem("user",JSON.stringify(arr))
+      localStorage.setItem("user", JSON.stringify(arr));
+      displayData(arr);
       console.log(arr);
       form.reset();
     }
-    function displayData(data){
-    
-        let display=document.getElementById("display")
-        let table = document.createElement("table");
-        let thead = document.createElement("thead");
-        let tbody = document.createElement("tbody");
-    let tr = document.createElement("tr");
-    let th1 = document.createElement("th");
-    th1.innerText="Name"
-    let th2 = document.createElement("th");
-    th2.innerText="City"
-    let th3 = document.createElement("th");
-    th3.innerText="Mobile"
-    let th4 = document.createElement("th");
-    th4.innerText="Date"
-    let th5 = document.createElement("th");
-    th5.innerText="State"
-    let th6 = document.createElement("th");
-    th6.innerText="Other"
-    tr.append(th1,th2,th3,th4,th5,th6)
-    thead.append(tr)
-     
-      data.forEach(element => {  
-        let tr1 = document.createElement("tr"); 
-        let td1 = document.createElement("td"); 
-        td1.innerText=element.name
-        let td2 = document.createElement("td"); 
-        td2.innerText=element.city
-        let td3 = document.createElement("td"); 
-        td3.innerText=element.mobile
-        let td4 = document.createElement("td"); 
-        td4.innerText=element.date
-        let td5 = document.createElement("td"); 
-        td5.innerText=element.State
-        let td6 = document.createElement("td"); 
-        td6.innerText=element.Details
-        tr1.append(td1,td2,td3,td4,td5,td6)
-        tbody.append(tr1)
-        table.append(thead, tbody)
-        display.append(table)
+    function displayData(data) {
+      let display = document.getElementById("display");
+      let table = document.createElement("table");
+      let thead = document.createElement("thead");
+      let tbody = document.createElement("tbody");
+      let tr = document.createElement("tr");
+      let th1 = document.createElement("th");
+      th1.innerText = "Name";
+      let th2 = document.createElement("th");
+      th2.innerText = "City";
+      let th3 = document.createElement("th");
+      th3.innerText = "Mobile";
+      let th4 = document.createElement("th");
+      th4.innerText = "Date";
+      let th5 = document.createElement("th");
+      th5.innerText = "State";
+      let th6 = document.createElement("th");
+      th6.innerText = "Other";
+      tr.append(th1, th2, th3, th4, th5, th6);
+      thead.append(tr);
+      display.innerHTML = null;
+      data.forEach((element) => {
+        let tr1 = document.createElement("tr");
+        let td1 = document.createElement("td");
+        td1.innerText = element.name;
+        let td2 = document.createElement("td");
+        td2.innerText = element.city;
+        let td3 = document.createElement("td");
+        td3.innerText = element.mobile;
+        let td4 = document.createElement("td");
+        td4.innerText = element.date;
+        let td5 = document.createElement("td");
+        td5.innerText = element.State;
+        let td6 = document.createElement("td");
+        td6.innerText = element.Details;
+        tr1.append(td1, td2, td3, td4, td5, td6);
+        tbody.append(tr1);
+        table.append(thead, tbody);
+        display.append(table);
       });
     }
-    displayData(arr)
+    displayData(arr);
   </script>
 </html>
