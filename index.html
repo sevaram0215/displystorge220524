@@ -29,7 +29,7 @@
       <div class="paremt_2">
         <div id="image">
           <img
-            src="https://images.unsplash.com/photo-1653762379641-116ab8ec41e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://wallpapercave.com/wp/wp11095483.jpg"
             alt=""
           />
         </div>
@@ -112,7 +112,8 @@
       arr.push(obj);
       localStorage.setItem("user", JSON.stringify(arr));
       displayData(arr);
-      console.log(arr);
+      alert("Submitted successfully")
+      // console.log(arr);
       form.reset();
     }
     function displayData(data) {
@@ -148,14 +149,33 @@
         td4.innerText = element.date;
         let td5 = document.createElement("td");
         td5.innerText = element.State;
+
         let td6 = document.createElement("td");
         td6.innerText = element.Details;
-        tr1.append(td1, td2, td3, td4, td5, td6);
+        let td7 = document.createElement("td");
+      let btn=document.createElement("button")
+       btn.id = "myNewButton"
+      btn.innerText="Add to cart"
+      btn.addEventListener("click",()=>{
+        addtocart("favdata",element)
+        alert("Data add to fav")
+      });
+      td7.append(btn)
+        tr1.append(td1, td2, td3, td4, td5, td6,td7);
         tbody.append(tr1);
         table.append(thead, tbody);
         display.append(table);
       });
     }
     displayData(arr);
+
+
+// ---------------------add to cart===============///
+
+function addtocart(key,value){
+  let cart=JSON.parse(localStorage.getItem("favdata"))|| []
+  cart.push(value)
+  localStorage.setItem("favdata",JSON.stringify(cart))
+}
   </script>
 </html>
